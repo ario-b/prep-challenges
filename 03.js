@@ -25,7 +25,7 @@ var productList = [{
 // insert product choosen to cart variable
 function addItemToCart(product){
     cart.push(product)
-    product["quantity"] -= 1
+    // product["quantity"] -= 1     still not working
 }
 
 // return total price of all items in cart
@@ -93,6 +93,5 @@ function getCart() {
         allProduct = "<p>Keranjang Belanja Masih Kosong!</p>"
     }
     document.getElementById("clist").innerHTML = allProduct
-    console.log(allProduct)
-    document.getElementById("tcart").innerHTML = "Total Harga Belanjaan: Rp." + totalCartPurchase()
-}
+    document.getElementById("tcart").innerHTML = "Jumlah Harga Belanjaan: Rp." + totalCartPurchase()
+}Total
